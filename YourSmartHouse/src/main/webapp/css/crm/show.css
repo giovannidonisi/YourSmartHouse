@@ -1,0 +1,49 @@
+.show {
+    width: 560px;
+    border: 3px solid var(--primary);
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.show img {
+    padding: 10px;
+    width: 540px;
+}
+.show-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.show-wrapper .button {
+    padding: 0 1px;
+    margin: 2px;
+}
+.show h3 {
+    padding: 6px;
+    font-size: 22px;
+}
+.show p {
+    padding: 5px;
+}
+.show h2 {
+    padding-top: 4px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 800px){
+    .show {
+        width: 320px;
+    }
+    .show img {
+        width: 300px;
+    }
+    .show h3 {
+        font-size: 20px;
+    }
+    .show p {
+        padding: 5px;
+    }
+    .show h2 {
+        font-size: 18px;
+    }
+}

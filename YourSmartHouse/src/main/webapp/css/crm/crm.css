@@ -1,0 +1,45 @@
+.grid-container {
+    padding: 20px;
+    align-items: center;
+    flex-grow: 1;
+    column-count: 1;
+}
+
+.grid-y {
+    padding: 6px 5px 0 5px;
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 100%;
+    border: 1px solid gray;
+    transition: .2s;
+}
+
+.grid-y:hover {
+    transform: scale(1.04, 1.06);
+    cursor: pointer;
+}
+
+h2 {
+    padding: 4px;
+    background-color: var(--primary);
+    color: var(--whitesmoke);
+    font-size: 24px;
+    text-align: center;
+}
+
+h4 {
+    margin: 0;
+    padding: 4px;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 770px){
+    .grid-container {
+        column-count: 2;
+    }
+
+    .grid-y {
+        flex-basis: 40%;
+    }
+}
